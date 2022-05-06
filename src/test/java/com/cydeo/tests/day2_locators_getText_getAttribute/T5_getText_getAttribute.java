@@ -37,12 +37,20 @@ public class T5_getText_getAttribute {
 
         WebElement firstNameInput = driver.findElement(By.name("firstname"));
 
+        String expectedPlaceHolder = "first name";
+
         // 5- Verify placeholder attribute’s value is as expected:
         // Expected: first name
 
-        String expectedPlaceHolder = firstNameInput.getAttribute("placeholder");
+        String actualPlaceHolder = firstNameInput.getAttribute("placeholder");
 
+        if(expectedPlaceHolder.equals(actualPlaceHolder)){
+            System.out.println("Placeholders is matching");
+        }else{
+            System.out.println("Placeholders are NOT matching");
+        }
 
+        driver.close();
 
 
     }
