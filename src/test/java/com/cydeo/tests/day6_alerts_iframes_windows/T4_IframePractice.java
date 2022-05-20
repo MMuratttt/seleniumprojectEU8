@@ -43,8 +43,15 @@ public class T4_IframePractice {
 
     @Test
     public void iframe_test() {
+        //#1
+        driver.switchTo().frame("mce_0_ifr");  // using id attribute
 
-        driver.switchTo().frame("mce_0_ifr");
+        //#2
+        // driver.switchTo().frame(0);  // with index number
+
+        //#3
+        // driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='mce_0_ifr']")));  // locating as webElement
+
 
         WebElement message = driver.findElement(By.xpath("//p[.='Your content goes here.']"));
 
