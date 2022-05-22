@@ -1,6 +1,6 @@
 package week02;
 
-import com.utilities.HandleWait;
+import com.utilities.ReviewUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -45,7 +45,7 @@ public class Test02 {
         }
 
 
-        HandleWait.staticWait(2);
+        ReviewUtils.staticWait(2);
 
         driver.close();
 

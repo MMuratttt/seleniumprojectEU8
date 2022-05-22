@@ -1,6 +1,6 @@
 package week02;
 
-import com.utilities.HandleWait;
+import com.utilities.ReviewUtils;
 import com.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +22,7 @@ public class Test01 {
 //  go to https://practice.cydeo.com/forgot_password
         driver.get("https://practice.cydeo.com");
 
-        HandleWait.staticWait(1);
+        ReviewUtils.staticWait(1);
 
         WebElement forgotPasswordLink = driver.findElement(By.linkText("Forgot Password"));
         forgotPasswordLink.click();
@@ -53,7 +53,7 @@ public class Test01 {
 
         driver.findElement(By.id("form_submit")).click();
 
-        HandleWait.staticWait(1);
+        ReviewUtils.staticWait(1);
 
         driver.close();
 

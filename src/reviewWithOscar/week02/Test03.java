@@ -1,6 +1,6 @@
 package week02;
 
-import com.utilities.HandleWait;
+import com.utilities.ReviewUtils;
 import com.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,17 +17,17 @@ public class Test03 {
         driver.manage().window().maximize();
         driver.get("https://www.demoblaze.com/index.html");
 
-        HandleWait.staticWait(1);
+        ReviewUtils.staticWait(1);
 
 
         driver.findElement(By.partialLinkText("Laptops")).click();
 
-        HandleWait.staticWait(1);
+        ReviewUtils.staticWait(1);
 
 
         driver.findElement(By.linkText("Sony vaio i5")).click();
 
-        HandleWait.staticWait(1);
+        ReviewUtils.staticWait(1);
 
 
         int expectedPrice = 790;
