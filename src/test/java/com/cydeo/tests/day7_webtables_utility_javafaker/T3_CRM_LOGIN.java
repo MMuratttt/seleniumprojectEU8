@@ -1,34 +1,14 @@
 package com.cydeo.tests.day7_webtables_utility_javafaker;
 
+import com.cydeo.tests.base.TestBase;
 import com.utilities.BrowserUtils;
 import com.utilities.CRM_Utilities;
-import com.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
+public class T3_CRM_LOGIN extends TestBase {
 
-public class T3_CRM_LOGIN {
-
-    public WebDriver driver;
-
-    @BeforeMethod
-    public void setupMethod(){
-
-        driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-    }
-
-@AfterMethod
-public void tearDownMethod(){
-    //   driver.close();
-}
 
 
     @Test
