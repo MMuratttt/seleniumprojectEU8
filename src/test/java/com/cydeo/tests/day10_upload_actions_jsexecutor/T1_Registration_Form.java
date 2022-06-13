@@ -1,6 +1,6 @@
 package com.cydeo.tests.day10_upload_actions_jsexecutor;
 
-import com.cydeo.tests.day8_properties_config_reader.ConfigurationReader;
+import com.utilities.ConfigurationReader;
 import com.github.javafaker.Faker;
 import com.utilities.Driver;
 import org.openqa.selenium.By;

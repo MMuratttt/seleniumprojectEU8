@@ -1,5 +1,6 @@
 package com.cydeo.tests.day8_properties_config_reader;
 
+import com.utilities.ConfigurationReader;
 import com.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

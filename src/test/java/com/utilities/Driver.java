@@ -1,6 +1,5 @@
 package com.utilities;
 
-import com.cydeo.tests.day8_properties_config_reader.ConfigurationReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
